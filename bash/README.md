@@ -12,8 +12,12 @@ bash скрипт для создания cgroup test и ограничения 
 
 Начальное состояние
 <img width="714" alt="Снимок экрана 2024-12-10 в 15 37 05" src="https://github.com/user-attachments/assets/5be70c51-d843-4890-9843-b967830b0e7f">
+
+
 После запуска
-<img width="714" alt="Снимок экрана 2024-12-10 в 15 37 05" src="https://github.com/user-attachments/assets/46288fda-a438-4608-b653-9597c1f654e3">
+<img width="714" alt="Снимок экрана 2024-12-10 в 15 39 47" src="https://github.com/user-attachments/assets/53179e11-4b27-430c-8c2a-891c9d377597">
+
+
 
 ## CHROOT
 
