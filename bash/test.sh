@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Имя группы cgroup и ограничение на память
-CGROUP_NAME="test"
+CGROUP_NAME="test2"
 MEMORY_LIMIT="60M"
 CPU_MAX="50000" 
 
@@ -22,7 +22,7 @@ sudo cgset -r cpu.max=$CPU_SHARES $CGROUP_NAME
 # Проверка значений
 echo "Ограничения для группы $CGROUP_NAME:"
 cgget -r memory.max $CGROUP_NAME
-cgget -r cpu.shares $CGROUP_NAME
+cgget -r cpu.max $CGROUP_NAME
 
 # Запуск ресурсоемкого процесса в группе
 echo "Запуск процесса stress в группе cgroup..."
