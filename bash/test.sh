@@ -15,9 +15,9 @@ cgget -r memory.max $CGROUP_NAME
 cgget -r cpu.max $CGROUP_NAME
 
 echo "Запуск процесса stress в группе cgroup..."
-sudo cgexec -g memory,cpu:$CGROUP_NAME stress --cpu 2 --vm 1 --vm-bytes 3000M --timeout 20s &
+sudo cgexec -g memory,cpu:$CGROUP_NAME stress --cpu 2 --vm 2 --vm-bytes 4000M --timeout 30s &
 
-sleep 30
+sleep 100
 
 sudo cgdelete -r memory,cpu:$CGROUP_NAME
 echo "Скрипт завершен. Cgroup удален."
